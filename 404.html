@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacrum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <link rel="stylesheet" href="asssets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="asssets/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__left">
+                    <button class="header__menu_mobile">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="2.5" width="16" height="1" rx="0.5" fill="white" />
+                            <rect y="7.5" width="16" height="1" rx="0.5" fill="white" />
+                            <rect y="12.5" width="16" height="1" rx="0.5" fill="white" />
+                        </svg>
+                    </button>
+                    <a href="" class="header__catalog">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="14" viewBox="0 0 23 14" fill="none">
+                            <path
+                                d="M19.6706 3.54545C20.0762 3.13131 20.3989 2.69123 20.6531 2.27413C20.4246 2.83539 20.1066 3.44894 19.667 4.02527C19.0148 4.88043 18.0957 5.65274 16.8019 6.05386C15.5074 6.45516 13.8243 6.48911 11.6373 5.84365C7.06087 4.49291 4.35578 4.66365 2.78465 5.19126C2.49229 5.28944 2.23955 5.39987 2.02169 5.5149C2.30848 5.25791 2.6692 4.99351 3.11728 4.75664C4.69691 3.92161 7.38927 3.41518 11.8087 4.83391L11.8546 4.69109L11.8087 4.83391C13.8027 5.47398 15.411 5.51955 16.7027 5.21838C17.9949 4.91711 18.9598 4.27127 19.6706 3.54545ZM20.0391 7.05153C20.4447 6.63738 20.7674 6.19731 21.0216 5.78021C20.7931 6.34147 20.4751 6.95502 20.0356 7.53135C19.3833 8.38651 18.4642 9.15882 17.1704 9.55994C15.8759 9.96124 14.1928 9.99519 12.0058 9.34973C7.42937 7.99899 4.72428 8.16973 3.15315 8.69734C2.86079 8.79552 2.60805 8.90595 2.3902 9.02098C2.67698 8.76398 3.0377 8.49959 3.48578 8.26272C5.06541 7.42769 7.75778 6.92125 12.1772 8.33998L12.2231 8.19716L12.1772 8.33999C14.1712 8.98006 15.7795 9.02563 17.0712 8.72446C18.3634 8.42318 19.3283 7.77735 20.0391 7.05153ZM20.4076 10.5576C20.8132 10.1435 21.1359 9.70339 21.3901 9.28629C21.1616 9.84755 20.8436 10.4611 20.4041 11.0374C19.7518 11.8926 18.8327 12.6649 17.5389 13.066C16.2444 13.4673 14.5613 13.5013 12.3743 12.8558C7.79788 11.5051 5.09278 11.6758 3.52165 12.2034C3.2293 12.3016 2.97656 12.412 2.7587 12.5271C3.04549 12.2701 3.4062 12.0057 3.85429 11.7688C5.43391 10.9338 8.12628 10.4273 12.5457 11.8461L12.5916 11.7032L12.5457 11.8461C14.5397 12.4861 16.148 12.5317 17.4397 12.2305C18.7319 11.9293 19.6969 11.2834 20.4076 10.5576Z"
+                                fill="url(#paint0_linear_2001_634)" />
+                            <path
+                                d="M19.6706 3.54545C20.0762 3.13131 20.3989 2.69123 20.6531 2.27413C20.4246 2.83539 20.1066 3.44894 19.667 4.02527C19.0148 4.88043 18.0957 5.65274 16.8019 6.05386C15.5074 6.45516 13.8243 6.48911 11.6373 5.84365C7.06087 4.49291 4.35578 4.66365 2.78465 5.19126C2.49229 5.28944 2.23955 5.39987 2.02169 5.5149C2.30848 5.25791 2.6692 4.99351 3.11728 4.75664C4.69691 3.92161 7.38927 3.41518 11.8087 4.83391L11.8546 4.69109L11.8087 4.83391C13.8027 5.47398 15.411 5.51955 16.7027 5.21838C17.9949 4.91711 18.9598 4.27127 19.6706 3.54545ZM20.0391 7.05153C20.4447 6.63738 20.7674 6.19731 21.0216 5.78021C20.7931 6.34147 20.4751 6.95502 20.0356 7.53135C19.3833 8.38651 18.4642 9.15882 17.1704 9.55994C15.8759 9.96124 14.1928 9.99519 12.0058 9.34973C7.42937 7.99899 4.72428 8.16973 3.15315 8.69734C2.86079 8.79552 2.60805 8.90595 2.3902 9.02098C2.67698 8.76398 3.0377 8.49959 3.48578 8.26272C5.06541 7.42769 7.75778 6.92125 12.1772 8.33998L12.2231 8.19716L12.1772 8.33999C14.1712 8.98006 15.7795 9.02563 17.0712 8.72446C18.3634 8.42318 19.3283 7.77735 20.0391 7.05153ZM20.4076 10.5576C20.8132 10.1435 21.1359 9.70339 21.3901 9.28629C21.1616 9.84755 20.8436 10.4611 20.4041 11.0374C19.7518 11.8926 18.8327 12.6649 17.5389 13.066C16.2444 13.4673 14.5613 13.5013 12.3743 12.8558C7.79788 11.5051 5.09278 11.6758 3.52165 12.2034C3.2293 12.3016 2.97656 12.412 2.7587 12.5271C3.04549 12.2701 3.4062 12.0057 3.85429 11.7688C5.43391 10.9338 8.12628 10.4273 12.5457 11.8461L12.5916 11.7032L12.5457 11.8461C14.5397 12.4861 16.148 12.5317 17.4397 12.2305C18.7319 11.9293 19.6969 11.2834 20.4076 10.5576Z"
+                                fill="#FFE9BF" fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                            <path
+                                d="M19.6706 3.54545C20.0762 3.13131 20.3989 2.69123 20.6531 2.27413C20.4246 2.83539 20.1066 3.44894 19.667 4.02527C19.0148 4.88043 18.0957 5.65274 16.8019 6.05386C15.5074 6.45516 13.8243 6.48911 11.6373 5.84365C7.06087 4.49291 4.35578 4.66365 2.78465 5.19126C2.49229 5.28944 2.23955 5.39987 2.02169 5.5149C2.30848 5.25791 2.6692 4.99351 3.11728 4.75664C4.69691 3.92161 7.38927 3.41518 11.8087 4.83391L11.8546 4.69109L11.8087 4.83391C13.8027 5.47398 15.411 5.51955 16.7027 5.21838C17.9949 4.91711 18.9598 4.27127 19.6706 3.54545ZM20.0391 7.05153C20.4447 6.63738 20.7674 6.19731 21.0216 5.78021C20.7931 6.34147 20.4751 6.95502 20.0356 7.53135C19.3833 8.38651 18.4642 9.15882 17.1704 9.55994C15.8759 9.96124 14.1928 9.99519 12.0058 9.34973C7.42937 7.99899 4.72428 8.16973 3.15315 8.69734C2.86079 8.79552 2.60805 8.90595 2.3902 9.02098C2.67698 8.76398 3.0377 8.49959 3.48578 8.26272C5.06541 7.42769 7.75778 6.92125 12.1772 8.33998L12.2231 8.19716L12.1772 8.33999C14.1712 8.98006 15.7795 9.02563 17.0712 8.72446C18.3634 8.42318 19.3283 7.77735 20.0391 7.05153ZM20.4076 10.5576C20.8132 10.1435 21.1359 9.70339 21.3901 9.28629C21.1616 9.84755 20.8436 10.4611 20.4041 11.0374C19.7518 11.8926 18.8327 12.6649 17.5389 13.066C16.2444 13.4673 14.5613 13.5013 12.3743 12.8558C7.79788 11.5051 5.09278 11.6758 3.52165 12.2034C3.2293 12.3016 2.97656 12.412 2.7587 12.5271C3.04549 12.2701 3.4062 12.0057 3.85429 11.7688C5.43391 10.9338 8.12628 10.4273 12.5457 11.8461L12.5916 11.7032L12.5457 11.8461C14.5397 12.4861 16.148 12.5317 17.4397 12.2305C18.7319 11.9293 19.6969 11.2834 20.4076 10.5576Z"
+                                stroke="#070F21" stroke-width="0.3" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2001_634" x1="0.917638" y1="6.99844" x2="22.1735"
+                                    y2="6.99844" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.0186222" stop-color="#9A8C84" />
+                                    <stop offset="0.4235" stop-color="#D3CCC5" />
+                                    <stop offset="0.4999" stop-color="#DED9D1" />
+                                    <stop offset="0.5991" stop-color="#D1CAC0" />
+                                    <stop offset="0.7129" stop-color="#C7C0B1" />
+                                    <stop offset="0.8064" stop-color="#C4BCAC" />
+                                    <stop offset="0.8566" stop-color="#B8AF9E" />
+                                    <stop offset="0.9516" stop-color="#978E78" />
+                                    <stop offset="0.9972" stop-color="#867664" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        Каталог
+                    </a>
+                </div>
+                <div class="header__center">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Конструктор
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <button class="header__search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.0313 20.7901C20.4913 21.2501 21.2013 20.5401 20.7413 20.0901L16.9913 16.3301C18.3071 14.8748 19.0343 12.982 19.0313 11.0201C19.0313 6.63006 15.4613 3.06006 11.0713 3.06006C6.68133 3.06006 3.11133 6.63006 3.11133 11.0201C3.11133 15.4101 6.68133 18.9801 11.0713 18.9801C13.0513 18.9801 14.8813 18.2501 16.2813 17.0401L20.0313 20.7901ZM4.11033 11.0201C4.11033 7.18006 7.24033 4.06006 11.0703 4.06006C14.9103 4.06006 18.0303 7.18006 18.0303 11.0201C18.0303 14.8601 14.9103 17.9801 11.0703 17.9801C7.24033 17.9801 4.11033 14.8601 4.11033 11.0201Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <a href="" class="header__wishlist">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99953 17.6128C9.99953 17.6128 15.9229 13.4997 18.5027 9.54631C21.0569 5.63304 18.5968 1.28397 15.7002 0.553356C11.8537 -0.417776 9.99953 3.34117 9.99953 3.34117C9.99953 3.34117 8.1456 -0.417776 4.29912 0.553356C1.40222 1.2845 -1.05727 5.63357 1.4964 9.54631C4.07616 13.4997 9.99953 17.6128 9.99953 17.6128Z"
+                                stroke="white" stroke-width="0.798191" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>
+                            1
+                        </span>
+                    </a>
+                    <a href="" class="header__cart">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.6665 9.33512C13.8512 9.33512 13.9998 9.48379 13.9998 9.66846V15.6685C13.9998 15.8531 13.8512 16.0018 13.6665 16.0018C13.4818 16.0018 13.3332 15.8531 13.3332 15.6685V9.66846C13.3332 9.48379 13.4818 9.33512 13.6665 9.33512ZM9.66649 9.33512C9.85116 9.33512 9.99982 9.48379 9.99982 9.66846V15.6685C9.99982 15.8531 9.85116 16.0018 9.66649 16.0018C9.48182 16.0018 9.33316 15.8531 9.33316 15.6685V9.66846C9.33316 9.48379 9.48182 9.33512 9.66649 9.33512ZM5.66649 9.33512C5.85116 9.33512 5.99982 9.48379 5.99982 9.66846V15.6685C5.99982 15.8531 5.85116 16.0018 5.66649 16.0018C5.48182 16.0018 5.33316 15.8531 5.33316 15.6685V9.66846C5.33316 9.48379 5.48182 9.33512 5.66649 9.33512ZM12.3505 0.668457C12.4372 0.668457 12.5192 0.707124 12.5792 0.768457L16.5725 4.76846C16.8672 5.06512 16.3992 5.53846 16.1012 5.24046L12.1078 1.24046C11.8932 1.02846 12.0112 0.668457 12.3505 0.668457ZM6.98249 0.668457C6.89582 0.668457 6.81382 0.707124 6.75382 0.768457L2.76049 4.76846C2.46582 5.06512 2.93382 5.53846 3.23182 5.24046L7.22516 1.24046C7.44116 1.02846 7.32249 0.668457 6.98316 0.668457H6.98249ZM0.999824 6.00179C0.723824 6.00179 0.46849 6.10846 0.275824 6.28979C0.0824903 6.47112 -0.0481764 6.75646 0.00515694 7.05912L2.00516 18.3925C2.04649 18.6258 2.14049 18.8525 2.30716 19.0325C2.47382 19.2111 2.72449 19.3351 3.00049 19.3351H16.3338C16.6098 19.3351 16.8605 19.2111 17.0272 19.0318C17.1938 18.8518 17.2872 18.6265 17.3285 18.3918L19.3285 7.05846C19.3818 6.75646 19.2505 6.47179 19.0578 6.28979C18.8638 6.10846 18.6092 6.00179 18.3332 6.00179H0.999824ZM0.999824 6.66846H18.3332C18.6665 6.66846 18.7092 6.80512 18.6718 6.94446L16.6718 18.2778C16.5918 18.5738 16.5185 18.6685 16.3332 18.6685H2.99982C2.75649 18.6685 2.72649 18.5218 2.66116 18.2778L0.661157 6.94446C0.619824 6.72446 0.833157 6.66846 0.999824 6.66846Z"
+                                fill="white" />
+                        </svg>
+
+                        <span>
+                            1
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.getElementById("header");
+            function toggleHeaderClass() {
+                if (window.scrollY > 0) {
+                    header.classList.add("scroll");
+                } else {
+                    header.classList.remove("scroll");
+                }
+            }
+            toggleHeaderClass();
+            window.addEventListener("scroll", toggleHeaderClass);
+        });
+    </script>
+    <section class="not_founded">
+        <div class="container">
+            <div class="not_founded__wrap">
+                <div class="not_founded__bg">
+                    404
+                </div>
+                <div class="not_founded__title">
+                    Порой не все в жизни идет так, как хочется
+                </div>
+                <div class="not_founded__subtitle">
+                    К сожалению, такой страницы не существует <br> или она была перенесена
+                </div>
+                <div class="not_founded__text">
+                    Вернись в каталог или на главную, чтобы <br> продолжить путь к гармонии вместе с Sacrum
+                </div>
+                <div class="not_founded__buttons">
+                    <a href="" class="not_founded__catalog">
+                        В корзину
+                    </a>
+                    <a href="" class="not_founded__home_page">
+                        На главную
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__left">
+                        <a href="" class="footer__logo">
+                            <img src="asssets/images/footer_logo.svg" alt="">
+                        </a>
+                        <div class="footer__subtitle">
+                            интернет-магазин женской одежды
+                        </div>
+                    </div>
+                    <div class="footer__nav_first">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Конструктор
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__nav_second">
+                        <div class="name">
+                            Покупателям
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Условия доставки
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Варианты оплаты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Гарантии
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Правила ухода
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="name">
+                            Контакты
+                        </div>
+                        <div class="tel">
+                            <span class="text">
+                                Телефон горячей линии
+                            </span>
+                            <a href="" class="">
+                                111–111–11–11
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <span class="text">
+                                Email
+                            </span>
+                            <a href="">
+                                Ecoliferossia@gmail.com
+                            </a>
+                        </div>
+                        <div class="footer_socies">
+                            <a href="" class="item">
+                                <img src="asssets/images/dzen.svg" alt="">
+                            </a>
+                            <a href="" class="item">
+                                <img src="asssets/images/inst.svg" alt="">
+                            </a>
+                            <a href="" class="item">
+                                <img src="asssets/images/telegram.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="inst__text">
+                            *Instagram принадлежит компании Meta, признанной экстремистской организацией и запрещённой
+                            в РФ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom__wrap">
+                    <div class="footer__bottom__copyright">
+                        ООО «Эколайв» ©
+                    </div>
+                    <a href="" class="footer__bottom__policy">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer__bottom__oferta">
+                        Условия оферты
+                    </a>
+                    <a href="" class="footer__bottom__razrab">
+                        Разработка сайта Effect Web
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile_menu">
+        <div class="mobile_menu__container">
+            <div class="mobile_menu__wrap">
+                <div class="mobile_menu__close_btn">
+                    <button class="mobile_menu__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 8L24 24M24 8L8 24" stroke="white" stroke-width="1.33333"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile_menu__main">
+                    <a href="" class="mobile_menu__catalog">
+                        Каталог
+                    </a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Конструктор
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_bg"></div>
+    <script>
+        function openMenu() {
+            $('.mobile_menu').addClass('open');
+            $('.popup_bg').addClass('open');
+            $('body').addClass('no-scroll');
+        }
+
+        function closeMenu() {
+            $('.mobile_menu').removeClass('open');
+            $('.popup_bg').removeClass('open');
+            $('body').removeClass('no-scroll');
+        }
+
+        $('.header__menu_mobile').on('click', openMenu);
+
+        $('.mobile_menu__close').on('click', closeMenu);
+
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.mobile_menu').length && !$(e.target).closest('.header__menu_mobile').length) {
+                closeMenu();
+            }
+        });
+    </script>
+    <div class="addproduct_popup">
+        <div class="addproduct_popup__container">
+            <button class="addproduct_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M8.5 8L24.5 24M24.5 8L8.5 24" stroke="white" stroke-width="1.33333"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="addproduct_popup__wrap">
+                <form action="">
+                    <div class="addproduct_popup__color">
+                        <div class="name">
+                            Цвет
+                        </div>
+                        <div class="content">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="color2">
+                                <label for="color-2">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-3" name="color" value="color3">
+                                <label for="color-3">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-4" name="color" value="color4">
+                                <label for="color-4">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-5" name="color" value="color5">
+                                <label for="color-5">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addproduct_popup__size">
+                        <div class="name">
+                            Размер
+                        </div>
+                        <div class="content">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="size-1" name="size" value="size">
+                                <label for="size-1">41</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="size-2" name="size" value="size">
+                                <label for="size-2">42</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="size-3" name="size" value="size">
+                                <label for="size-3">43</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="size-4" name="size" value="size">
+                                <label for="size-4">44</label>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="addproduct_popup__btn">
+                        Добавить в корзину
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openAddProduct() {
+            $('.addproduct_popup').addClass('active');
+            $('body').addClass('no-scroll');
+        }
+
+        function closeAddProduct() {
+            $('.addproduct_popup').removeClass('active');
+            $('body').removeClass('no-scroll');
+        }
+
+        $('.addproduct_popup__open').on('click', function (event) {
+            event.preventDefault();
+            openAddProduct();
+        });
+
+        $('.addproduct_popup__close').on('click', function (event) {
+            event.preventDefault();
+            closeAddProduct();
+        });
+
+    </script>
+    <div class="roll_popup">
+        <div class="roll_popup__container">
+            <button class="roll_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                    <path d="M8.5 8.5L24.5 24.5M24.5 8.5L8.5 24.5" stroke="white" stroke-width="1.33333"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="roll_popup__wrap">
+                <div class="roll_popup__left">
+
+                </div>
+                <div class="roll_popup__right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="philosophy_popup">
+        <div class="philosophy_popup__container">
+            <button class="philosophy_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M8.5 8L24.5 24M24.5 8L8.5 24" stroke="white" stroke-width="1.33333"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="philosophy_popup__wrap">
+                <img src="asssets/images/about_logo.svg" alt="" class="logo">
+                <div class="philosophy_popup__title">
+                    Философия бренда
+                </div>
+                <div class="philosophy_popup__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openPhilosophy() {
+            $('.philosophy_popup').addClass('active');
+            $('body').addClass('no-scroll');
+        }
+
+        function closePhilosophy() {
+            $('.philosophy_popup').removeClass('active');
+            $('body').removeClass('no-scroll');
+        }
+
+        $('.about_promo__btn').on('click', function (event) {
+            event.preventDefault();
+            openPhilosophy();
+        });
+
+        $('.philosophy_popup__close').on('click', function (event) {
+            event.preventDefault();
+            closePhilosophy();
+        });
+    </script>
+    <!-- <script src="asssets/js/app.js"></script> -->
+</body>
+
+</html>
