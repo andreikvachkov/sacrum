@@ -6709,6 +6709,7 @@ header::before {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    align-items: start;
 }
 .construkrot_page__item {
     display: flex;
