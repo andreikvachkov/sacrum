@@ -129,1019 +129,762 @@
             window.addEventListener("scroll", toggleHeaderClass);
         });
     </script>
-    <section class="catalog">
+    <section class="construkrot_page">
         <div class="container">
-            <div class="catalog__wrap">
-                <div class="catalog__header">
-                    <div class="catalog__title">
-                        <h1>
-                            Каталог
-                        </h1>
-                    </div>
-                    <div class="catalog__sort">
-                        <button class="sort">
-                            Сортировать
+            <div class="construkrot_page__wrap">
+                <div class="construkrot_page__title">
+                    <h1>
+                        Собери свой идеальный комплект в констуркторе
+                    </h1>
+                </div>
+                <div class="construkrot_page__colection">
+                    <button class="construkrot_page__colection__btn">
+                        Выбери коллекцию
+                        <img src="asssets/images/arrow.svg" alt="">
+                    </button>
+                    <div class="construkrot_page__colection__content">
+                        <button>
+                            Коллекция волшебные сноведения
                         </button>
-                        <div class="sort__content">
-                            <button>
-                                По популярности
-                            </button>
-                            <button>
-                                По возрастанию цены
-                            </button>
-                            <button class="checkedsort">
-                                По убыванию цены
-                            </button>
-                            <button>
-                                По новизне
-                            </button>
-                        </div>
+                        <button class="checked">
+                            Коллекция волшебная
+                        </button>
+                        <button>
+                            Коллекция волшебная ночь
+                        </button>
+                        <button>
+                            Коллекция чудная 12345
+                        </button>
                     </div>
                 </div>
-                <script>
-                    function openSort() {
-                        $('.catalog__sort .sort__content').toggleClass('active');
-                    }
-
-                    $('.catalog__sort .sort').on('click', function (event) {
-                        event.preventDefault();
-                        openSort();
-                    });
-                    $(document).on('click', function (e) {
-                        if (!$(e.target).closest('.catalog__sort .sort__content').length && !$(e.target).closest('.catalog__sort .sort').length) {
-                            $('.catalog__sort .sort__content').removeClass('active');
-                        }
-                    });
-                </script>
-                <div class="catalog__main">
-                    <div class="catalog__filter">
-                        <div class="filter">
-                            <details class="filter_category">
-                                <summary>Пижамы</summary>
-                                <div class="content">
-                                    <ul>
-                                        <li>
-                                            <a href="">
-                                                Гармония души и тела
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                Гармония души и тела
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                Гармония души и тела
-                                            </a>
-                                        </li>
-                                    </ul>
+                <div class="construkrot_page__main">
+                    <div class="construkrot_page__left">
+                        <div class="construkrot_page__item">
+                            <div class="construkrot_page__item__header">
+                                <div class="construkrot_page__item__name">
+                                    Верх
+                                    <img src="asssets/images/arrow.svg" alt="">
                                 </div>
-                            </details>
-                            <details class="filter_news">
-                                <summary>Новинки</summary>
-                                <div class="content">
-                                    <ul>
-                                        <li>
-                                            <a href="">
-                                                Гармония души и тела
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                Гармония души и тела
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                Гармония души и тела
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </details>
-                            <details class="filter_size">
-                                <summary>Размер</summary>
-                                <div class="content">
+                                <div class="construkrot_page__cloathing_var">
                                     <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="size-11" name="filter_size"
-                                            value="ХS">
-                                        <label for="size-11">ХS </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="size-22" name="filter_size"
-                                            value="S">
-                                        <label for="size-22">S</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="size-33" name="filter_size"
-                                            value="M">
-                                        <label for="size-33">M</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="size-44" name="filter_size"
-                                            value="L">
-                                        <label for="size-44">L</label>
-                                    </div>
-
-                                </div>
-                            </details>
-                            <details class="filter_color">
-                                <summary>Цвет</summary>
-                                <div class="content">
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="color-11" name="filter_color"
-                                            value="color-11">
-                                        <label for="color-11">
-                                            <img src="asssets/images/color.png" alt="">
+                                        <input class="custom-checkbox" type="radio" id="cloathing-1" name="cloathing1"
+                                            value="indigo">
+                                        <label for="cloathing-1">
+                                            <img src="asssets/images/rub.svg" alt="">
+                                            Рубашка
                                         </label>
                                     </div>
                                     <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="color-22" name="filter_color"
-                                            value="color-11">
-                                        <label for="color-22">
+                                        <input class="custom-checkbox" type="radio" id="cloathing-2" name="cloathing1"
+                                            value="indigo">
+                                        <label for="cloathing-2">
+                                            <img src="asssets/images/rub.svg" alt="">
+                                            Майка
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="construkrot_page__item__color">
+                                <div class="top">
+                                    <div class="name">
+                                        Цвет
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-23" name="color33"
+                                            value="color2">
+                                        <label for="color-23">
                                             <img src="asssets/images/color.png" alt="">
                                         </label>
                                     </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="color-33" name="filter_color"
-                                            value="color-11">
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-33" name="color33"
+                                            value="color3">
                                         <label for="color-33">
                                             <img src="asssets/images/color.png" alt="">
                                         </label>
                                     </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="color-44" name="filter_color"
-                                            value="color-11">
-                                        <label for="color-44">
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-43" name="color33"
+                                            value="color4">
+                                        <label for="color-43">
+                                            <img src="asssets/images/color.png" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-53" name="color33"
+                                            value="color5">
+                                        <label for="color-53">
                                             <img src="asssets/images/color.png" alt="">
                                         </label>
                                     </div>
                                 </div>
-                            </details>
-                            <details class="filter_price">
-                                <summary>Цена</summary>
+                            </div>
+                            <div class="construkrot_page__item__size">
+                                <div class="top">
+                                    <div class="name">
+                                        Цвет
+                                    </div>
+                                    <a href="" class="btn_size">
+                                        Таблица размеров
+                                    </a>
+                                </div>
                                 <div class="content">
-
-                                    <div class="custom-wrapper">
-
-                                        <div class="price-input-container">
-                                            <div class="slider-container">
-                                                <div class="price-slider">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="range-input">
-                                            <input type="range" class="min-range" min="0" max="10000" value="2500"
-                                                step="1">
-                                            <input type="range" class="max-range" min="0" max="10000" value="8500"
-                                                step="1">
-                                        </div>
-                                        <div class="price-input">
-                                            <div class="price-field">
-
-                                                <input type="number" class="min-input" value="2500">
-                                            </div>
-                                            <span>
-                                                <svg width="15" height="2" viewBox="0 0 15 2" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <line x1="0.980713" y1="1" x2="14.0191" y2="1" stroke="white" />
-                                                </svg>
-                                            </span>
-                                            <div class="price-field">
-
-                                                <input type="number" class="max-input" value="8500">
-                                            </div>
-                                        </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-13" name="size33"
+                                            value="size">
+                                        <label for="size-13">41</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-23" name="size33"
+                                            value="size">
+                                        <label for="size-23">42</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-33" name="size33"
+                                            value="size">
+                                        <label for="size-33">43</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-43" name="size33"
+                                            value="size">
+                                        <label for="size-43">44</label>
                                     </div>
                                 </div>
-                            </details>
-                        </div>
-                        <div class="catalog_construktor">
-                            <div class="catalog_construktor__text">
-                                Cочетай любые элементы, цвета, размеры, чтобы создать комплект мечты
                             </div>
-                            <a href="" class="catalog_construktor__btn">
-                                Собрать комплект в конструкторе
-                            </a>
                         </div>
+                        <div class="construkrot_page__item">
+                            <div class="construkrot_page__item__header">
+                                <div class="construkrot_page__item__name">
+                                    Низ
+                                    <img src="asssets/images/arrow.svg" alt="">
+                                </div>
+                                <div class="construkrot_page__cloathing_var">
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="radio" id="cloathing-11" name="cloathing2"
+                                            value="indigo">
+                                        <label for="cloathing-11">
+                                            <img src="asssets/images/rub.svg" alt="">
+                                            Рубашка
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="radio" id="cloathing-22" name="cloathing2"
+                                            value="indigo">
+                                        <label for="cloathing-22">
+                                            <img src="asssets/images/rub.svg" alt="">
+                                            Майка
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="construkrot_page__item__color">
+                                <div class="top">
+                                    <div class="name">
+                                        Цвет
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-23" name="color33"
+                                            value="color2">
+                                        <label for="color-23">
+                                            <img src="asssets/images/color.png" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-33" name="color33"
+                                            value="color3">
+                                        <label for="color-33">
+                                            <img src="asssets/images/color.png" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-43" name="color33"
+                                            value="color4">
+                                        <label for="color-43">
+                                            <img src="asssets/images/color.png" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="color-53" name="color33"
+                                            value="color5">
+                                        <label for="color-53">
+                                            <img src="asssets/images/color.png" alt="">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="construkrot_page__item__size">
+                                <div class="top">
+                                    <div class="name">
+                                        Цвет
+                                    </div>
+                                    <a href="" class="btn_size">
+                                        Таблица размеров
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-13" name="size33"
+                                            value="size">
+                                        <label for="size-13">41</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-23" name="size33"
+                                            value="size">
+                                        <label for="size-23">42</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-33" name="size33"
+                                            value="size">
+                                        <label for="size-33">43</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input class="custom-radio" type="radio" id="size-43" name="size33"
+                                            value="size">
+                                        <label for="size-43">44</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="construkrot_page__btn_sucsess">
+                            Собрать комплект
+                        </button>
                     </div>
-                    <div class="catalog__content">
-                        <div class="catalog__products">
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item__img">
-                                    <img src="asssets/images/catalog.png" alt="">
-                                </div>
-                                <div class="catalog__item__info">
-                                    <div class="catalog__item__name">
-                                        Пижама «........…»
-                                    </div>
-                                    <div class="catalog__item__content">
-                                        <div class="catalog__item__variation">
-                                            <div class="catalog__item__color">
-                                                <img src="asssets/images/color.png" alt="">
-                                                <img src="asssets/images/color.png" alt="">
-                                            </div>
-                                            <div class="catalog__item__size">
-                                                <span>
-                                                    40
-                                                </span>
-                                                <span>
-                                                    41
-                                                </span>
-                                                <span>
-                                                    42
-                                                </span>
-                                            </div>
-                                            <div class="catalog__item__price">
-                                                1000 ₽
-                                            </div>
-                                        </div>
-                                        <div class="catalog__item__btn">
-                                            <button>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="url(#paint0_linear_2001_76)" />
-                                                    <path
-                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
-                                                        fill="#FFE9BF" fill-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
-                                                            y1="11.997" x2="24.0955" y2="11.997"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="construkrot_page__right">
+                        <div class="construkrot_page__right_left">
+                            <img src="asssets/images/about_logo.svg" alt="" class="ico">
+                            <div class="text">
+                                Cочетай любые элементы, <br> цвета, размеры, чтобы создать комплект мечты
                             </div>
                         </div>
-                        <div class="catalog__content__bottom">
-                            <button class="catalog__btn_more">
-                                Показать еще
-                            </button>
-                            <div class="catalog__pagination">
-                                <nav>
-                                    <ul>
-                                        <li>
-                                            <span>
-                                                1
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                2
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                3
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                4
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                5
-                                            </a>
-                                        </li>
-                                        <li class="next">
-                                            <a href="">
-                                                Дальше
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M16 4.99805C16 5.74005 16.733 6.84805 17.475 7.77805C18.429 8.97805 19.569 10.025 20.876 10.824C21.856 11.423 23.044 11.998 24 11.998M24 11.998C23.044 11.998 21.855 12.573 20.876 13.172C19.569 13.972 18.429 15.019 17.475 16.217C16.733 17.148 16 18.258 16 18.998M24 11.998H0"
-                                                        stroke="url(#paint0_linear_249_7470)" />
-                                                    <path
-                                                        d="M16 4.99805C16 5.74005 16.733 6.84805 17.475 7.77805C18.429 8.97805 19.569 10.025 20.876 10.824C21.856 11.423 23.044 11.998 24 11.998M24 11.998C23.044 11.998 21.855 12.573 20.876 13.172C19.569 13.972 18.429 15.019 17.475 16.217C16.733 17.148 16 18.258 16 18.998M24 11.998H0"
-                                                        stroke="#FFE9BF" stroke-opacity="0.24"
-                                                        style="mix-blend-mode:saturation" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_249_7470" x1="0.00847781"
-                                                            y1="11.9964" x2="24.0955" y2="11.9964"
-                                                            gradientUnits="userSpaceOnUse">
-                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
-                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
-                                                            <stop offset="0.4999" stop-color="#DED9D1" />
-                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
-                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
-                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
-                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
-                                                            <stop offset="0.9516" stop-color="#978E78" />
-                                                            <stop offset="0.9972" stop-color="#867664" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <div class="catalog__pagination__page">
-                                    <span>
-                                        12 
-                                    </span>
-                                    из 
-                                    <span>
-                                        353
-                                    </span>
-                                </div>
-                            </div>
+                        <div class="construkrot_page__right__right">
+                            <img src="asssets/images/baner2_logo.svg" alt="">
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        function openColection() {
+            $('.construkrot_page__colection__content').toggleClass('active');
+        }
+
+        $('.construkrot_page__colection__btn').on('click', function (event) {
+            event.preventDefault();
+            openColection();
+        });
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.construkrot_page__colection__content').length && !$(e.target).closest('.construkrot_page__colection__btn').length) {
+                $('.construkrot_page__colection__content').removeClass('active');
+            }
+        });
+    </script>
+    <section class="seealso">
+        <div class="container">
+            <div class="seealso__wrap">
+                <div class="seealso__title">
+                    <h2>
+                        Смотрите также
+                    </h2>
+                </div>
+                <div class="seealso__main">
+                    <div class="swiper seealso__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="seealso__slide__container">
+                                    <div class="seealso__slide__img">
+                                        <img src="asssets/images/catalog.png" alt="">
+                                    </div>
+                                    <div class="seealso__slide__name">
+                                        Пижама «........…»
+                                    </div>
+                                    <div class="seealso__slide__info">
+                                        <div class="left">
+                                            <div class="seealso__slide__color">
+                                                <img src="asssets/images/color.png" alt="">
+                                                <img src="asssets/images/color.png" alt="">
+                                            </div>
+                                            <div class="seealso__slide__size">
+                                                <span>
+                                                    40
+                                                </span>
+                                                <span>
+                                                    41
+                                                </span>
+                                                <span>
+                                                    42
+                                                </span>
+                                            </div>
+                                            <div class="seealso__slide__price">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <button class="seealso__slide__btn addproduct_popup__open">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="url(#paint0_linear_2001_76)" />
+                                                    <path
+                                                        d="M16.9615 11.1727C17.1906 11.1727 17.375 11.3572 17.375 11.5862V19.0291C17.375 19.2582 17.1906 19.4426 16.9615 19.4426C16.7325 19.4426 16.5481 19.2582 16.5481 19.0291V11.5862C16.5481 11.3572 16.7325 11.1727 16.9615 11.1727ZM11.9996 11.1727C12.2287 11.1727 12.4131 11.3572 12.4131 11.5862V19.0291C12.4131 19.2582 12.2287 19.4426 11.9996 19.4426C11.7705 19.4426 11.5861 19.2582 11.5861 19.0291V11.5862C11.5861 11.3572 11.7705 11.1727 11.9996 11.1727ZM7.03767 11.1727C7.26675 11.1727 7.45117 11.3572 7.45117 11.5862V19.0291C7.45117 19.2582 7.26675 19.4426 7.03767 19.4426C6.8086 19.4426 6.62418 19.2582 6.62418 19.0291V11.5862C6.62418 11.3572 6.8086 11.1727 7.03767 11.1727ZM15.3291 0.421875C15.4366 0.421875 15.5383 0.46984 15.6127 0.545923L20.5664 5.50786C20.9319 5.87587 20.3514 6.46303 19.9817 6.09337L15.028 1.13143C14.7618 0.868449 14.9081 0.421875 15.3291 0.421875ZM8.67015 0.421875C8.56264 0.421875 8.46092 0.46984 8.38649 0.545923L3.43283 5.50786C3.0673 5.87587 3.64784 6.46303 4.01751 6.09337L8.97118 1.13143C9.23912 0.868449 9.09192 0.421875 8.67098 0.421875H8.67015ZM1.24875 7.03779C0.906372 7.03779 0.589635 7.17011 0.350635 7.39505C0.110808 7.61999 -0.0512822 7.97394 0.014877 8.3494L2.49585 22.4082C2.54712 22.6977 2.66372 22.9788 2.87047 23.2021C3.07722 23.4238 3.38817 23.5776 3.73054 23.5776H20.2703C20.6127 23.5776 20.9237 23.4238 21.1304 23.2013C21.3372 22.978 21.4529 22.6985 21.5042 22.4074L23.9852 8.34857C24.0513 7.97394 23.8884 7.62082 23.6494 7.39505C23.4088 7.17011 23.0928 7.03779 22.7505 7.03779H1.24875ZM1.24875 7.86478H22.7505C23.164 7.86478 23.2169 8.03431 23.1706 8.20716L20.6896 22.266C20.5904 22.6332 20.4994 22.7506 20.2695 22.7506H3.72971C3.42786 22.7506 3.39065 22.5687 3.3096 22.266L0.828635 8.20716C0.777361 7.93425 1.042 7.86478 1.24875 7.86478Z"
+                                                        fill="#FFE9BF" fill-opacity="0.24"
+                                                        style="mix-blend-mode:saturation" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_2001_76" x1="0.00847781"
+                                                            y1="11.997" x2="24.0955" y2="11.997"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                            <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                            <stop offset="0.4999" stop-color="#DED9D1" />
+                                                            <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                            <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                            <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                            <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                            <stop offset="0.9516" stop-color="#978E78" />
+                                                            <stop offset="0.9972" stop-color="#867664" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+                        <button class="seealso__swiper__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                                fill="none">
+                                <mask id="mask0_179_4120" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="50" height="50">
+                                    <rect width="50" height="50" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_179_4120)">
+                                    <path
+                                        d="M20.8333 43.9577L1.875 24.9993L20.8333 6.04102L22.6042 7.81185L5.41667 24.9993L22.6042 42.1868L20.8333 43.9577Z"
+                                        fill="#070F21" />
+                                </g>
+                            </svg>
+                        </button>
+                        <button class="seealso__swiper__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                                fill="none">
+                                <mask id="mask0_179_4123" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="50" height="50">
+                                    <rect width="50" height="50" transform="matrix(-1 0 0 1 50 0)" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_179_4123)">
+                                    <path
+                                        d="M29.1667 43.9577L48.125 24.9993L29.1667 6.04102L27.3958 7.81185L44.5833 24.9993L27.3958 42.1868L29.1667 43.9577Z"
+                                        fill="#070F21" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="seealso__bottom">
+                    <a href="" class="seealso__btn">
+                        В каталог
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const seealso__swiper = new Swiper('.seealso__swiper', {
+            slidesPerView: 'auto',
+            loop: true,
+            spaceBetween: 14,
+
+            navigation: {
+                nextEl: '.seealso__swiper__next',
+                prevEl: '.seealso__swiper__prev',
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 20,
+                }
+            }
+        });
+    </script>
     <footer>
         <div class="footer__top">
             <div class="container">
@@ -1491,7 +1234,26 @@
             closePhilosophy();
         });
     </script>
-    <script src="asssets/js/app.js"></script>
+    <div class="thankyou_popup">
+        <div class="thankyou_popup__container">
+            <button class="thankyou_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M8.5 8L24.5 24M24.5 8L8.5 24" stroke="white" stroke-width="1.33333"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="thankyou_popup__wrap">
+                <img src="asssets/images/about_logo.svg" alt="" class="logo">
+                <div class="thankyou_popup__title">
+                    Благодарим за отзыв!
+                </div>
+                <div class="thankyou_popup__text">
+                    Вы помогаете нам стать чуточку лучше
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="asssets/js/app.js"></script> -->
 </body>
 
 </html>

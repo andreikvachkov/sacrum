@@ -1622,6 +1622,635 @@
             </div>
         </div>
     </div>
+    <div class="tablesize_popup">
+        <div class="tablesize_popup__container">
+            <button class="tablesize_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M8.5 8L24.5 24M24.5 8L8.5 24" stroke="white" stroke-width="1.33333"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="tablesize_popup__wrap">
+                <div class="tablesize_popup__left">
+                    <img src="asssets/images/tablesize.png" alt="">
+                </div>
+                <div class="tablesize_popup__right">
+                    <div class="tablesize_popup__title">
+                        Таблица размеров
+                    </div>
+                    <div class="tablesize_popup__text">
+                        Обхват груди (1) : Сантиметровая лента строго горизонтально проходит по наиболее выступающим
+                        точкам. <br>
+                        Обхват талии (2) : По самой узкой части тела. <br>
+                        Обхват бёдер (3) : По наиболее выступающим точкам ягодиц <br>
+                    </div>
+                    <div class="tablesize_popup__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        EUR
+                                    </th>
+                                    <th>
+                                        Rus
+                                    </th>
+                                    <th>
+                                        Обхват груди <br>
+                                        <span>см</span>
+
+                                    </th>
+                                    <th>
+                                        Обхват талии <br>
+                                        <span>см</span>
+                                    </th>
+                                    <th>
+                                        Рост <br>
+                                        <span>см</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    xxs
+                                </td>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    76-80
+                                </td>
+                                <td>
+                                    58-62
+                                </td>
+                                <td>
+                                    84-88
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTableSize() {
+            $('.tablesize_popup').addClass('active');
+            $('body').addClass('no-scroll');
+        }
+
+        function closeTableSize() {
+            $('.tablesize_popup').removeClass('active');
+            $('body').removeClass('no-scroll');
+        }
+
+        $('.product_page__popup_size').on('click', function (event) {
+            event.preventDefault();
+            openTableSize();
+        });
+
+        $('.tablesize_popup__close').on('click', function (event) {
+            event.preventDefault();
+            closeTableSize();
+        });
+    </script>
+    <div class="review_popup">
+        <div class="review_popup__container">
+            <button class="review_popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M8.5 8L24.5 24M24.5 8L8.5 24" stroke="white" stroke-width="1.33333"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="review_popup__wrap">
+                <div class="review_popup__title">
+                    Добавьте отзыв
+                </div>
+                <div class="review_popup__content">
+                    <form action="">
+                        <input type="text" placeholder="ФИО*">
+                        <input type="text" placeholder="E-mail*">
+                        <textarea name="" id="" placeholder="Комментарий / Вопрос*"></textarea>
+                        <div class="review_popup__btn">
+                            <button>
+                                Отправить
+                            </button>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1"
+                                    value="indigo">
+                                <label for="color-1">Нажимая «Отправить», я даю согласие на <a href="">обработку
+                                        персональных
+                                        данных</a></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openReviewPopup() {
+            $('.review_popup').addClass('active');
+            $('body').addClass('no-scroll');
+        }
+
+        function closeReviewPopup() {
+            $('.review_popup').removeClass('active');
+            $('body').removeClass('no-scroll');
+        }
+
+        $('.reviews__add').on('click', function (event) {
+            event.preventDefault();
+            openReviewPopup();
+        });
+
+        $('.review_popup__close').on('click', function (event) {
+            event.preventDefault();
+            closeReviewPopup();
+        });
+    </script>
+    <div class="wishlist_popup">
+        <div class="wishlist_popup__container">
+            <div class="wishlist_popup__wrap">
+                <div class="wishlist_popup__header">
+                    <div class="wishlist_popup__title">
+                        Избранное
+                    </div>
+                    <button class="wishlist_popup__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                            <path d="M8.5 8L24.5 24M24.5 8L8.5 24" stroke="white" stroke-width="1.33333"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="wishlist_popup__main">
+                    <div class="wishlist_popup__item">
+                        <div class="wishlist_popup__item__img">
+                            <img src="asssets/images/product.png" alt="">
+                        </div>
+                        <div class="wishlist_popup__item__info">
+                            <div class="wishlist_popup__item__header">
+                                <div class="wishlist_popup__item__name">
+                                    Рубашка «Волшебные сновидения»
+                                </div>
+                                <a href="" class="wishlist_popup__item__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M6 6L18 18M18 6L6 18" stroke="white" stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="wishlist_popup__item__character">
+                                <ul>
+                                    <li>
+                                        Артикул: 123456
+                                    </li>
+                                    <li>
+                                        Цвет: синий
+                                    </li>
+                                    <li>
+                                        Размер: 44
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wishlist_popup__item__bottom">
+                                <div class="wishlist_popup__item__left">
+                                    <div class="number" data-step="1" data-min="1" data-max="100">
+                                        <input class="number-text" type="text" name="count" value="1">
+                                        <a href="#" class="number-minus">
+                                            <svg width="8" height="2" viewBox="0 0 8 2" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0.75V1.25H0V0.75H8Z"
+                                                    fill="url(#paint0_linear_182_7693)" />
+                                                <path d="M8 0.75V1.25H0V0.75H8Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_182_7693" x1="0.00282594"
+                                                        y1="0.999942" x2="8.03182" y2="0.999942"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="number-plus">
+                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 0H4.25V8H3.75V0Z"
+                                                    fill="url(#paint0_linear_182_7696)" />
+                                                <path d="M3.75 0H4.25V8H3.75V0Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <path d="M8 3.74414V4.24414H0V3.74414H8Z"
+                                                    fill="url(#paint1_linear_182_7696)" />
+                                                <path d="M8 3.74414V4.24414H0V3.74414H8Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_182_7696" x1="0.00282594"
+                                                        y1="3.99907" x2="8.03182" y2="3.99907"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                    <linearGradient id="paint1_linear_182_7696" x1="0.00282594"
+                                                        y1="3.99907" x2="8.03182" y2="3.99907"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="wishlist_popup__item__price">
+                                        13 000 ₽
+                                    </div>
+                                </div>
+                                <div class="wishlist_popup__item__right">
+                                    <a href="" class="wishlist_popup__item__btn">
+                                        Добавить в корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wishlist_popup__item">
+                        <div class="wishlist_popup__item__img">
+                            <img src="asssets/images/product.png" alt="">
+                        </div>
+                        <div class="wishlist_popup__item__info">
+                            <div class="wishlist_popup__item__header">
+                                <div class="wishlist_popup__item__name">
+                                    Рубашка «Волшебные сновидения»
+                                </div>
+                                <a href="" class="wishlist_popup__item__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M6 6L18 18M18 6L6 18" stroke="white" stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="wishlist_popup__item__character">
+                                <ul>
+                                    <li>
+                                        Артикул: 123456
+                                    </li>
+                                    <li>
+                                        Цвет: синий
+                                    </li>
+                                    <li>
+                                        Размер: 44
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wishlist_popup__item__bottom">
+                                <div class="wishlist_popup__item__left">
+                                    <div class="number" data-step="1" data-min="1" data-max="100">
+                                        <input class="number-text" type="text" name="count" value="1">
+                                        <a href="#" class="number-minus">
+                                            <svg width="8" height="2" viewBox="0 0 8 2" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0.75V1.25H0V0.75H8Z"
+                                                    fill="url(#paint0_linear_182_7693)" />
+                                                <path d="M8 0.75V1.25H0V0.75H8Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_182_7693" x1="0.00282594"
+                                                        y1="0.999942" x2="8.03182" y2="0.999942"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="number-plus">
+                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 0H4.25V8H3.75V0Z"
+                                                    fill="url(#paint0_linear_182_7696)" />
+                                                <path d="M3.75 0H4.25V8H3.75V0Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <path d="M8 3.74414V4.24414H0V3.74414H8Z"
+                                                    fill="url(#paint1_linear_182_7696)" />
+                                                <path d="M8 3.74414V4.24414H0V3.74414H8Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_182_7696" x1="0.00282594"
+                                                        y1="3.99907" x2="8.03182" y2="3.99907"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                    <linearGradient id="paint1_linear_182_7696" x1="0.00282594"
+                                                        y1="3.99907" x2="8.03182" y2="3.99907"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="wishlist_popup__item__price">
+                                        13 000 ₽
+                                    </div>
+                                </div>
+                                <div class="wishlist_popup__item__right">
+                                    <a href="" class="wishlist_popup__item__btn">
+                                        Добавить в корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wishlist_popup__item">
+                        <div class="wishlist_popup__item__img">
+                            <img src="asssets/images/product.png" alt="">
+                        </div>
+                        <div class="wishlist_popup__item__info">
+                            <div class="wishlist_popup__item__header">
+                                <div class="wishlist_popup__item__name">
+                                    Рубашка «Волшебные сновидения»
+                                </div>
+                                <a href="" class="wishlist_popup__item__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M6 6L18 18M18 6L6 18" stroke="white" stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="wishlist_popup__item__character">
+                                <ul>
+                                    <li>
+                                        Артикул: 123456
+                                    </li>
+                                    <li>
+                                        Цвет: синий
+                                    </li>
+                                    <li>
+                                        Размер: 44
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wishlist_popup__item__bottom">
+                                <div class="wishlist_popup__item__left">
+                                    <div class="number" data-step="1" data-min="1" data-max="100">
+                                        <input class="number-text" type="text" name="count" value="1">
+                                        <a href="#" class="number-minus">
+                                            <svg width="8" height="2" viewBox="0 0 8 2" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0.75V1.25H0V0.75H8Z"
+                                                    fill="url(#paint0_linear_182_7693)" />
+                                                <path d="M8 0.75V1.25H0V0.75H8Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_182_7693" x1="0.00282594"
+                                                        y1="0.999942" x2="8.03182" y2="0.999942"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="number-plus">
+                                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.75 0H4.25V8H3.75V0Z"
+                                                    fill="url(#paint0_linear_182_7696)" />
+                                                <path d="M3.75 0H4.25V8H3.75V0Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <path d="M8 3.74414V4.24414H0V3.74414H8Z"
+                                                    fill="url(#paint1_linear_182_7696)" />
+                                                <path d="M8 3.74414V4.24414H0V3.74414H8Z" fill="#FFE9BF"
+                                                    fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_182_7696" x1="0.00282594"
+                                                        y1="3.99907" x2="8.03182" y2="3.99907"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                    <linearGradient id="paint1_linear_182_7696" x1="0.00282594"
+                                                        y1="3.99907" x2="8.03182" y2="3.99907"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                                        <stop offset="0.9516" stop-color="#978E78" />
+                                                        <stop offset="0.9972" stop-color="#867664" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="wishlist_popup__item__price">
+                                        13 000 ₽
+                                    </div>
+                                </div>
+                                <div class="wishlist_popup__item__right">
+                                    <a href="" class="wishlist_popup__item__btn">
+                                        Товар в корзине
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_bg2"></div>
+    <script>
+        function openWishlist() {
+            $('.wishlist_popup').addClass('active');
+            $('.popup_bg2').addClass('open');
+            $('body').addClass('no-scroll');
+        }
+
+        function closeWishlist() {
+            $('.wishlist_popup').removeClass('active');
+            $('.popup_bg2').removeClass('open');
+            $('body').removeClass('no-scroll');
+        }
+        $('.header__wishlist').on('click', function (event) {
+            event.preventDefault();
+            openWishlist();
+        });
+
+        $('.wishlist_popup__close').on('click', function (event) {
+            event.preventDefault();
+            closeWishlist();
+        });
+
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.wishlist_popup').length && !$(e.target).closest('.header__wishlist').length) {
+                closeWishlist();
+            }
+        });
+    </script>
     <!-- <script src="asssets/js/app.js"></script> -->
 </body>
 
