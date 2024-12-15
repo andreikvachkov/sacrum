@@ -82,6 +82,17 @@
                     </nav>
                 </div>
                 <div class="header__right">
+                    <div class="header__search__wrap">
+                        <input type="text" placeholder="Начните вводить">
+                        <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.0313 20.7901C20.4913 21.2501 21.2013 20.5401 20.7413 20.0901L16.9913 16.3301C18.3071 14.8748 19.0343 12.982 19.0313 11.0201C19.0313 6.63006 15.4613 3.06006 11.0713 3.06006C6.68133 3.06006 3.11133 6.63006 3.11133 11.0201C3.11133 15.4101 6.68133 18.9801 11.0713 18.9801C13.0513 18.9801 14.8813 18.2501 16.2813 17.0401L20.0313 20.7901ZM4.11033 11.0201C4.11033 7.18006 7.24033 4.06006 11.0703 4.06006C14.9103 4.06006 18.0303 7.18006 18.0303 11.0201C18.0303 14.8601 14.9103 17.9801 11.0703 17.9801C7.24033 17.9801 4.11033 14.8601 4.11033 11.0201Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
                     <button class="header__search">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -115,20 +126,6 @@
             </div>
         </div>
     </header>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const header = document.getElementById("header");
-            function toggleHeaderClass() {
-                if (window.scrollY > 0) {
-                    header.classList.add("scroll");
-                } else {
-                    header.classList.remove("scroll");
-                }
-            }
-            toggleHeaderClass();
-            window.addEventListener("scroll", toggleHeaderClass);
-        });
-    </script>
     <section class="product_page">
         <div class="container">
             <div class="product_page__wrap">
@@ -432,69 +429,6 @@
             </div>
         </div>
     </section>
-    <script>
-        const sliderThumbs = new Swiper(".slider__thumbs .swiper-container", {
-            direction: "vertical",
-            slidesPerView: 3,
-            spaceBetween: 10,
-            navigation: {
-
-                nextEl: ".slider__next",
-                prevEl: ".slider__prev"
-            },
-            freeMode: true,
-            breakpoints: {
-
-                0: {
-
-                },
-                768: {
-
-                }
-            }
-        });
-        const sliderImages = new Swiper(".slider__images .swiper-container", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".slider__next",
-                prevEl: ".slider__prev"
-            },
-            grabCursor: true,
-            thumbs: {
-                swiper: sliderThumbs
-            },
-            breakpoints: {
-                0: {
-
-                },
-                768: {
-
-                }
-            }
-        });
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-
-            tabcontent = document.getElementsByClassName("product_page__tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            tablinks = document.getElementsByClassName("product_page__tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        const product_page_mobile__swiper = new Swiper('.product_page_mobile__swiper', {
-            slidesPerView: 1,
-            loop: true,
-            spaceBetween: 8,
-        });
-    </script>
     <section class="additional">
         <div class="container">
             <div class="additional__title">
@@ -928,19 +862,6 @@
             </div>
         </div>
     </section>
-    <script>
-        const main_catalog__swiper = new Swiper('.main_catalog__swiper', {
-            slidesPerView: 'auto',
-            loop: true,
-            spaceBetween: 20,
-
-            navigation: {
-                nextEl: '.main_catalog__swiper__next',
-                prevEl: '.main_catalog__swiper__prev',
-            },
-
-        });
-    </script>
     <section class="reviews">
         <div class="container">
             <div class="reviews__wrap">
@@ -1236,24 +1157,6 @@
             </div>
         </div>
     </section>
-    <script>
-        const reviews__swiper = new Swiper('.reviews__swiper', {
-            slidesPerView: 1,
-            loop: true,
-            spaceBetween: 8,
-
-            navigation: {
-                nextEl: '.reviews__swiper__next',
-                prevEl: '.reviews__swiper__prev',
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                }
-            }
-        });
-    </script>
     <footer>
         <div class="footer__top">
             <div class="container">
@@ -1424,29 +1327,6 @@
         </div>
     </div>
     <div class="popup_bg"></div>
-    <script>
-        function openMenu() {
-            $('.mobile_menu').addClass('open');
-            $('.popup_bg').addClass('open');
-            $('body').addClass('no-scroll');
-        }
-
-        function closeMenu() {
-            $('.mobile_menu').removeClass('open');
-            $('.popup_bg').removeClass('open');
-            $('body').removeClass('no-scroll');
-        }
-
-        $('.header__menu_mobile').on('click', openMenu);
-
-        $('.mobile_menu__close').on('click', closeMenu);
-
-        $(document).on('click', function (e) {
-            if (!$(e.target).closest('.mobile_menu').length && !$(e.target).closest('.header__menu_mobile').length) {
-                closeMenu();
-            }
-        });
-    </script>
     <div class="addproduct_popup">
         <div class="addproduct_popup__container">
             <button class="addproduct_popup__close">
@@ -1518,28 +1398,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function openAddProduct() {
-            $('.addproduct_popup').addClass('active');
-            $('body').addClass('no-scroll');
-        }
-
-        function closeAddProduct() {
-            $('.addproduct_popup').removeClass('active');
-            $('body').removeClass('no-scroll');
-        }
-
-        $('.addproduct_popup__open').on('click', function (event) {
-            event.preventDefault();
-            openAddProduct();
-        });
-
-        $('.addproduct_popup__close').on('click', function (event) {
-            event.preventDefault();
-            closeAddProduct();
-        });
-
-    </script>
     <div class="roll_popup">
         <div class="roll_popup__container">
             <button class="roll_popup__close">
@@ -1550,10 +1408,140 @@
             </button>
             <div class="roll_popup__wrap">
                 <div class="roll_popup__left">
-
+                    <div class="roll_popup__left__wrap">
+                        <div class="roll_popup__arow">
+                            <svg width="33" height="23" viewBox="0 0 33 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.631836 0.991719L17.1318 22.9072L32.6318 0.907211C19.9679 -0.263595 13.1422 -0.216521 0.631836 0.991719Z"
+                                    fill="url(#paint0_linear_348_5341)" />
+                                <path
+                                    d="M0.631836 0.991719L17.1318 22.9072L32.6318 0.907211C19.9679 -0.263595 13.1422 -0.216521 0.631836 0.991719Z"
+                                    fill="#FFE9BF" fill-opacity="0.24" style="mix-blend-mode:saturation" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_348_5341" x1="0.64314" y1="11.4793" x2="32.7591"
+                                        y2="11.4793" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                        <stop offset="0.9516" stop-color="#978E78" />
+                                        <stop offset="0.9972" stop-color="#867664" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="roll_popup__wheel" id="wheel">
+                            <img src="asssets/images/wheel.svg" alt="">
+                        </div>
+                        <div class="roll_popup__whell_bg">
+                            <svg width="120" height="160" viewBox="0 0 120 160" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M70.3586 157.171C60.676 155.893 50.9491 156.508 41.4076 159.093C41.2142 159.145 41.0212 159.198 40.8285 159.252L40.2764 157.232L7.56642 36.5103L0 8.60174C0.195955 8.5481 0.392012 8.49471 0.588182 8.44156C0.853827 8.36958 1.11952 8.29808 1.38527 8.22707C30.9891 0.316397 61.248 -1.61347 91.3695 2.51653C100.961 3.80669 110.517 5.73778 119.905 8.26614L119.568 9.64672L112.505 36.2944L112.09 37.5913L89.0801 124.438L88.8125 125.765L80.4682 157.153L79.9315 159.152C76.7995 158.284 73.6056 157.623 70.3586 157.171Z"
+                                    fill="url(#paint0_linear_348_5364)" fill-opacity="0.2" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_348_5364" x1="0.0423556" y1="79.8088" x2="120.382"
+                                        y2="79.8088" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.0186222" stop-color="#9A8C84" />
+                                        <stop offset="0.4235" stop-color="#D3CCC5" />
+                                        <stop offset="0.4999" stop-color="#DED9D1" />
+                                        <stop offset="0.5991" stop-color="#D1CAC0" />
+                                        <stop offset="0.7129" stop-color="#C7C0B1" />
+                                        <stop offset="0.8064" stop-color="#C4BCAC" />
+                                        <stop offset="0.8566" stop-color="#B8AF9E" />
+                                        <stop offset="0.9516" stop-color="#978E78" />
+                                        <stop offset="0.9972" stop-color="#867664" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="roll_popup__arrow_center">
+                            <img src="asssets/images/roll_arow_center.svg" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="roll_popup__right">
-
+                    <div class="roll_popup__right__main">
+                        <div class="roll_popup__title">
+                            <div class="ico">
+                                <img src="asssets/images/rol_ico1.svg" alt="">
+                            </div>
+                            <div class="title">
+                                Следуй за космическим компасом вселенной
+                            </div>
+                            <div class="ico">
+                                <img src="asssets/images/rol_ico2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="roll_popup__text">
+                            Путь всего живого пронизан звёздной нитью и окружён гармонией галактик. Каким будет этот
+                            путь: чарующим, ярким и творческим или гармоничным, нежным и волшебным. У вселенной уже есть
+                            свой план, готова узнать его?
+                        </div>
+                        <button class="roll_popup__btn" id="spinButton">
+                            Крутить колесо фортуны
+                        </button>
+                    </div>
+                    <div class="roll_popup__load">
+                        <div class="load__line">
+                            <span>
+                                <img src="asssets/images/load_star.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="asssets/images/load_star.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="asssets/images/load_star.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="load__text">
+                            До получения предсказания осталась пара мгновений
+                        </div>
+                    </div>
+                    <div class="roll_popup__sucsess">
+                        <div class="roll_popup__title">
+                            <div class="ico">
+                                <img src="asssets/images/rol_ico1.svg" alt="">
+                            </div>
+                            <div class="title">
+                                Следуй за космическим компасом вселенной
+                            </div>
+                            <div class="ico">
+                                <img src="asssets/images/rol_ico2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="roll_popup__text">
+                            Путь всего живого пронизан звёздной нитью и окружён гармонией галактик. Каким будет этот
+                            путь: чарующим, ярким и творческим или гармоничным, нежным и волшебным. У вселенной уже есть
+                            свой план, готова узнать его?
+                        </div>
+                        <div class="roll_popup__promocod">
+                            <div class="star">
+                                <img src="asssets/images/load_star.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="line">
+                                    <p>Дарим скидку 20% на первый</p>
+                                </div>
+                                <div class="line">
+                                    <p>заказ по промокоду</p>
+                                    <button id="copyButton">
+                                        <span>
+                                            123456
+                                        </span>
+                                        <img src="asssets/images/copy.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <img src="asssets/images/load_star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1572,37 +1560,218 @@
                     Философия бренда
                 </div>
                 <div class="philosophy_popup__text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        function openPhilosophy() {
-            $('.philosophy_popup').addClass('active');
-            $('body').addClass('no-scroll');
-        }
+    <div class="filter_popup">
+        <div class="filter_popup__container">
+            <div class="filter_popup__wrap">
+                <div class="filter_popup__header">
+                    <div class="filter_popup__header_left">
+                        <button class="filter_popup__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                fill="none">
+                                <path d="M21.1519 10.3595L13.8602 17.6512L21.1519 24.9429" stroke="white"
+                                    stroke-width="1.45833" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter_popup__header_center">
+                        Фильтры
+                    </div>
+                    <div class="filter_popup__header_right">
+                        <button class="filter_popup__clear">
+                            Сбросить всё
+                        </button>
+                    </div>
+                </div>
+                <div class="filter_popup__main">
+                    <button class="filter_popup__sort_btn">
+                        Сортировать
+                    </button>
+                    <details class="filter_category">
+                        <summary>Пижамы</summary>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Гармония души и тела
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Гармония души и тела
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Гармония души и тела
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="filter_news">
+                        <summary>Новинки</summary>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Гармония души и тела
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Гармония души и тела
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Гармония души и тела
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="filter_size">
+                        <summary>Размер</summary>
+                        <div class="content">
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="size-111" name="filter_size2"
+                                    value="ХS">
+                                <label for="size-111">ХS </label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="size-222" name="filter_size2"
+                                    value="S">
+                                <label for="size-222">S</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="size-333" name="filter_size2"
+                                    value="M">
+                                <label for="size-333">M</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="size-444" name="filter_size2"
+                                    value="L">
+                                <label for="size-444">L</label>
+                            </div>
 
-        function closePhilosophy() {
-            $('.philosophy_popup').removeClass('active');
-            $('body').removeClass('no-scroll');
-        }
+                        </div>
+                    </details>
+                    <details class="filter_color">
+                        <summary>Цвет</summary>
+                        <div class="content">
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-11" name="filter_color"
+                                    value="color-11">
+                                <label for="color-11">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-22" name="filter_color"
+                                    value="color-11">
+                                <label for="color-22">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-33" name="filter_color"
+                                    value="color-11">
+                                <label for="color-33">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-44" name="filter_color"
+                                    value="color-11">
+                                <label for="color-44">
+                                    <img src="asssets/images/color.png" alt="">
+                                </label>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="filter_price">
+                        <summary>Цена</summary>
+                        <div class="content">
 
-        $('.about_promo__btn').on('click', function (event) {
-            event.preventDefault();
-            openPhilosophy();
-        });
+                            <div class="custom-wrapper">
 
-        $('.philosophy_popup__close').on('click', function (event) {
-            event.preventDefault();
-            closePhilosophy();
-        });
-    </script>
+                                <div class="price-input-container">
+                                    <div class="slider-container">
+                                        <div class="price-slider">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
+                                    <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+                                </div>
+                                <div class="price-input">
+                                    <div class="price-field">
+
+                                        <input type="number" class="min-input" value="2500">
+                                    </div>
+                                    <span>
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.980713" y1="1" x2="14.0191" y2="1" stroke="white" />
+                                        </svg>
+                                    </span>
+                                    <div class="price-field">
+
+                                        <input type="number" class="max-input" value="8500">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                    <button class="filter_popup__btn_sucsess">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sort_popup">
+        <div class="sort_popup__container">
+            <div class="sort_popup__wrap">
+                <div class="sort_popup__header">
+                    <button class="sort_popup__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M21.1519 10.3595L13.8602 17.6512L21.1519 24.9429" stroke="white"
+                                stroke-width="1.45833" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="sort_popup__name">
+                        Сортировать
+                    </div>
+                </div>
+                <div class="sort_popup__main">
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="sortpopup-1" name="sortpopup" value="indigo">
+                        <label for="sortpopup-1">По популярности</label>
+                    </div>
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="sortpopup-2" name="sortpopup" value="indigo">
+                        <label for="sortpopup-2">По возрастанию цены</label>
+                    </div>
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="sortpopup-3" name="sortpopup" value="indigo">
+                        <label for="sortpopup-3">По убыванию цены</label>
+                    </div>
+                    <div class="radio">
+                        <input class="custom-radio" type="radio" id="sortpopup-4" name="sortpopup" value="indigo">
+                        <label for="sortpopup-4">По новизне</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="thankyou_popup">
         <div class="thankyou_popup__container">
             <button class="thankyou_popup__close">
@@ -1618,6 +1787,100 @@
                 </div>
                 <div class="thankyou_popup__text">
                     Вы помогаете нам стать чуточку лучше
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="charitable_popup">
+        <div class="charitable_popup__container">
+            <button class="charitable_popup__close">
+                <img src="asssets/images/close.svg" alt="" srcset="">
+            </button>
+            <div class="charitable_popup__wrap">
+                <img src="asssets/images/about_logo.svg" alt="" class="logo">
+                <div class="charitable_popup__title">
+                    <p>
+                        Благодарим за покупку. Информацию о заказе направим
+                    </p>
+                    <p>
+                        на указанный e–mail в ближайшее время
+                        <img src="asssets/images/hands.svg" alt="">
+                    </p>
+                </div>
+                <div class="charitable_popup__content">
+                    <div class="charitable_popup__text">
+                        Часть суммы от каждого заказа жертвуем на благотворительность
+                    </div>
+                    <div class="charitable_popup__value">
+                        <div class="text">
+                            Выбери кому хочешь помочь
+                            <img src="asssets/images/heart.svg" alt="">
+                        </div>
+                        <div class="list">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="fond-2" name="fond" value="fond2">
+                                <label for="fond-2">
+                                    <div class="img">
+                                        <img src="asssets/images/fond.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        Фонд Твори добро
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="fond-3" name="fond" value="fond3">
+                                <label for="fond-3">
+                                    <div class="img">
+                                        <img src="asssets/images/fond.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        Фонд Твори добро
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="fond-4" name="fond" value="fond4">
+                                <label for="fond-4">
+                                    <div class="img">
+                                        <img src="asssets/images/fond.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        Фонд Твори добро
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="fond-5" name="fond" value="fond5">
+                                <label for="fond-5">
+                                    <div class="img">
+                                        <img src="asssets/images/fond.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        Фонд Твори добро
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="fond-6" name="fond" value="fond6">
+                                <label for="fond-6">
+                                    <div class="img">
+                                        <img src="asssets/images/fond.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        Фонд Твори добро
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="charitable_popup__btn">
+                        Помочь фонду
+                    </a>
+                    <div class="charitable_popup__bottom_text">
+                        Каждое маленькое добро, как капля росы на утреннем цветке, наполняет мир светом и гармонией и
+                        возвращается вам добром
+                    </div>
                 </div>
             </div>
         </div>
@@ -1794,27 +2057,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function openTableSize() {
-            $('.tablesize_popup').addClass('active');
-            $('body').addClass('no-scroll');
-        }
-
-        function closeTableSize() {
-            $('.tablesize_popup').removeClass('active');
-            $('body').removeClass('no-scroll');
-        }
-
-        $('.product_page__popup_size').on('click', function (event) {
-            event.preventDefault();
-            openTableSize();
-        });
-
-        $('.tablesize_popup__close').on('click', function (event) {
-            event.preventDefault();
-            closeTableSize();
-        });
-    </script>
     <div class="review_popup">
         <div class="review_popup__container">
             <button class="review_popup__close">
@@ -1849,27 +2091,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function openReviewPopup() {
-            $('.review_popup').addClass('active');
-            $('body').addClass('no-scroll');
-        }
-
-        function closeReviewPopup() {
-            $('.review_popup').removeClass('active');
-            $('body').removeClass('no-scroll');
-        }
-
-        $('.reviews__add').on('click', function (event) {
-            event.preventDefault();
-            openReviewPopup();
-        });
-
-        $('.review_popup__close').on('click', function (event) {
-            event.preventDefault();
-            closeReviewPopup();
-        });
-    </script>
     <div class="wishlist_popup">
         <div class="wishlist_popup__container">
             <div class="wishlist_popup__wrap">
@@ -2222,36 +2443,7 @@
             </div>
         </div>
     </div>
-    <div class="popup_bg2"></div>
-    <script>
-        function openWishlist() {
-            $('.wishlist_popup').addClass('active');
-            $('.popup_bg2').addClass('open');
-            $('body').addClass('no-scroll');
-        }
-
-        function closeWishlist() {
-            $('.wishlist_popup').removeClass('active');
-            $('.popup_bg2').removeClass('open');
-            $('body').removeClass('no-scroll');
-        }
-        $('.header__wishlist').on('click', function (event) {
-            event.preventDefault();
-            openWishlist();
-        });
-
-        $('.wishlist_popup__close').on('click', function (event) {
-            event.preventDefault();
-            closeWishlist();
-        });
-
-        $(document).on('click', function (e) {
-            if (!$(e.target).closest('.wishlist_popup').length && !$(e.target).closest('.header__wishlist').length) {
-                closeWishlist();
-            }
-        });
-    </script>
-    <!-- <script src="asssets/js/app.js"></script> -->
+    <script src="asssets/js/app.js"></script>
 </body>
 
 </html>
